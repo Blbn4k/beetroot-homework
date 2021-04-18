@@ -4,20 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список покупок</title>
+    <title>Замовлення</title>
 </head>
 <body>
     <a href="index.html">Назад</a>
     <form action="mailto:eugenegura@gmail.com" enctype="text/plain">
-            <h2>Що потрібно сьогодні придбати</h2>
+        <h2>Замовлення №1</h2>
+            <fieldset>
+                <legend>Крок №1</legend>
             <ol>
-            <p><li><input type="checkbox" name="a" value="молоко" id="check1"><label for="check1">молоко</label></li></p>
-            <p><li><input type="checkbox" name="a" value="гриби" id="check2"><label for="check2">гриби</label></li></p>
-            <p><li><input type="checkbox" name="a" value="олія" id="check3"><label for="check3">олія</label></li></p>
-            <p><li><input type="checkbox" name="a" value="хліб" id="check4"><label for="check4">хліб</label></li></p>
-            <p><li><input type="checkbox" name="a" value="курятина" id="check5"><label for="check5">курятина</label></li></p>
+            <p><li><input type="checkbox" name="milk1" id="check1"><label for="check1">молоко</label>&nbsp
+               <input type="number" size="5" min="1" max="5" step="1" value="1" name="milk2"> л. </li></p>
+            <p><li><input type="checkbox" name="mushrooms1" id="check2"><label for="check2">гриби</label>&nbsp
+               <input type="number" size="5" min="1" max="5" step="1" value="1" name="mushrooms2"> кг. </li></p>
+            <p><li><input type="checkbox" name="sunfloweroil1" id="check3"><label for="check3">олія</label>&nbsp
+               <input type="number" size="5" min="1" max="3" step="0.5" value="1" name="sunfloweroil2"> л. </li></p>
+            <p><li><input type="checkbox" name="bread1" id="check4"><label for="check4">хліб</label>&nbsp
+                <input type="number" size="5" min="1" max="3" step="1" value="1" name="bread2"> шт. </li></p>
+            <p><li><input type="checkbox" name="chicken1" id="check5"><label for="check5">курятина</label>&nbsp
+                <input type="number" size="5" min="0.5" max="3" step="0.5" value="0.5" name="chicken2"> кг. </li></p>
             </ol>
-            <p><input type="submit" value="Отправить"></p>
+            </fieldset><br>
+            <fieldset>
+                <legend>Крок №2</legend>
+                <p><label for="name">ПІБ (повністю)</label><br>
+                <input type="text" id="name" name="registration_name" size="40">
+                </p>
+                <p><label for="login">Логін</label><br>
+                <input type="text" id="login" name="registration_login" size="40" maxlength="15">
+                </p>
+                <p><label for="email">E-mail</label><br>
+                <input type="email" id="email" name="registration_email" size="40" value="@gmail.com">
+                </p>
+                <p><label for="mobtel">Номер телефону</label><br>
+                <input type="tel" id="mobtel" name="registration_tel" size="40" value="+380" maxlength="16">
+                </p>
+                <p><label for="password1">Пароль</label><br>
+                <input type="password" id="password1" name="registration_password1" size="40" maxlength="15">
+                </p>
+                <p><label for="password2">Повторіть пароль</label><br>
+                <input type="password" id="password2" name="registration_password2" size="40" maxlength="15">
+                </p>
+            </fieldset><br>
+            <fieldset>
+                <legend>Крок №3</legend>
+                <label for="payment">Форма оплати</label><br>
+                <select id="payment" name="paymentform">
+                    <option value="p1">Банківська карта</option>
+                    <option value="p2">Готівка</option>
+                    <option value="p3">Оплата онлайн</option>
+                    <option hidden disabled selected>Вибрати</option>
+                </select>
+                <br>
+                <fieldset>
+                    <legend>Спосіб забору товару</legend>
+                    <input type="radio" name="delivery" value="del1" id="self">
+                    <label for="self">Самовивіз</label><br>
+                    <input type="radio" name="delivery" value="del2" id="del">
+                    <label for="del">Доставка кур'єром</label><br>
+                    <input type="radio" name="delivery" value="del3" id="glovo">
+                    <label for="glovo">Доставка кур'єром Glovo</label><br>
+                </fieldset>
+                <br>
+                <label for="adress">Адреса доставки</label><br>
+                <textarea name="delivery_adress" id="adress" cols="40" rows="3"></textarea><br>
+                <button><a href="https://www.google.com.ua/maps/" target="_blank">Відкрити карти</a></button>
+                <br>
+                <label for="date">Дата та час доставки</label><br>
+                <input type="datetime-local" id="date" name="delivery_date">
+            </fieldset><br>
+            <input type="checkbox" name="conditions" id="agree">
+            <label for="agree">Я згоден з умовами <a href="#">реєстрації</a> та <a href="#"> оплати </a></label>
+            <br>
+            <input type="submit" value="Підтвердити замовлення">
        </form>
 </body>
 </html>
