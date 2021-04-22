@@ -1,0 +1,27 @@
+body {
+  background-color: #990908;
+  font-size: 18px;
+}
+
+.title-img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #000000;
+}
+
+.nav__item {
+  float: left;
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 0 calc((100%-300px * 4) / 8-20px);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
