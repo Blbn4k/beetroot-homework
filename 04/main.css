@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.shapka {
+  background-color: #a52a2a;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.cars {
+  text-align: center;
+}
+
+.text2 span {
+  color: blue;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
