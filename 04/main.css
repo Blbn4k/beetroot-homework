@@ -36,3 +36,7 @@ footer {
   font-style: italic;
   font-weight: bold;
 }
+
+.back {
+  text-decoration: none;
+}
