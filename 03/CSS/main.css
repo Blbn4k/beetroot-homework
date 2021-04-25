@@ -25,3 +25,39 @@ nav {
 .clear {
   clear: left;
 }
+
+.left-aside {
+  float: left;
+  width: 340px;
+  height: 500px;
+  background: #7d0909;
+  margin-top: 5px;
+}
+
+.left-aside a {
+  color: #e9490c;
+  line-height: 50px;
+}
+
+.right-aside {
+  float: right;
+  width: 270px;
+  height: 500px;
+  background: #e3dddd;
+  margin-top: 5px;
+}
+
+.right-aside-title {
+  text-align: center;
+  line-height: 15px;
+  margin: 2px;
+  background: #bdbdbd;
+}
+
+hr {
+  width: 140px;
+}
+
+.right-aside p {
+  margin: 35px 0;
+}
