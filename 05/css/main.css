@@ -141,3 +141,18 @@ main {
 .home-card__controls-linktwo:active {
   color: red;
 }
+
+.home-card__controls-linkthree {
+  color: white;
+  margin-left: 27px;
+
+  transition: all 0.25s;
+}
+
+.home-card__controls-linkthree:hover {
+  color: bisque;
+}
+
+.home-card__controls-linkthree:active {
+  color: red;
+}
