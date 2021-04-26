@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.shapka {
+  background-color: #a52a2a;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.cars {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text2 span {
+  color: blue;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.everycar {
+  border-style: dotted;
+}
+
+.text span {
+  color: blue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.back {
+  text-decoration: none;
+}
+
+.photo {
+  text-align: center;
+}
