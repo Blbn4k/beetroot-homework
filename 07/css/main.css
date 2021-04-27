@@ -46,6 +46,7 @@ main {
   border: transparent;
 
   transition: all 0.25s;
+  /*добавляет анимацию*/
 }
 
 .list_list:hover {
