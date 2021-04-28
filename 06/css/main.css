@@ -6,6 +6,7 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .item {
@@ -16,4 +17,69 @@
   padding-right: 45px;
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #2a69a6;
+  background-color: #2a69a6;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: background-color 0.25s;
+}
+
+.icon:hover {
+  background-color: white;
+}
+
+.icon.dino {
+  background-image: url("../img/dinowhite.png");
+}
+
+.icon.dino:hover {
+  background-image: url("../img/dinosaur.png");
+}
+
+.icon.dino:active {
+  background-image: url("../img/dinoblack.png");
+}
+
+.icon.dragon {
+  background-image: url("../img/dragonwhite.png");
+}
+
+.icon.dragon:hover {
+  background-image: url("../img/dragon.png");
+}
+
+.icon.dragon:active {
+  background-image: url("../img/dragonblack.png");
+}
+
+.icon.kiwi {
+  background-image: url("../img/kiwiwhite.png");
+}
+
+.icon.kiwi:hover {
+  background-image: url("../img/kiwi.png");
+}
+
+.icon.kiwi:active {
+  background-image: url("../img/kiwiblack.png");
+}
+
+.title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.content {
+  opacity: 50%;
 }
