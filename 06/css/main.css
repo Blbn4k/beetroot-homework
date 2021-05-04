@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .item {
   float: left;
-  width: 400px;
+  width: 33.333333333%;
   text-align: center;
   padding-left: 45px;
   padding-right: 45px;
@@ -35,6 +35,7 @@
 
 .icon:hover {
   background-color: white;
+  border-radius: 25%;
 }
 
 .icon.dino {
@@ -82,4 +83,10 @@
 
 .content {
   opacity: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .item {
+    width: 50%;
+  }
 }

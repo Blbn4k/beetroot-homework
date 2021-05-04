@@ -103,3 +103,8 @@ input {
   cursor: pointer;
   margin: 10px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
