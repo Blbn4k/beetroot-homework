@@ -45,8 +45,6 @@ a:active {
   justify-content: space-between;
   /*вирівнюємо наші елементи по центру вертикально, флекс розмістив їх зверху*/
   align-items: center;
-
-  outline: 2px solid red;
 }
 
 .header_logo {
@@ -92,6 +90,102 @@ a:active {
   margin: 200px auto;
 }
 
-.container {
-  height: 1000px;
+.content {
+  counter-reset: step;
+  margin-top: -200px;
 }
+
+.container {
+  max-width: 1502px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.step > *:first-child {
+  margin-right: 114px;
+}
+
+.step_content {
+  padding: 100px 0 140px 150px;
+  position: relative;
+}
+
+.step_content::before {
+  counter-increment: step;
+  content: "0" counter(step);
+  position: absolute;
+  left: 0;
+  top: 38px;
+  font-size: 240px;
+  font-weight: 600;
+  opacity: 0.1;
+  line-height: 240px;
+}
+
+.step_name {
+  color: #fbd784;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 27px;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+
+/*Потрібно розібратися з Step_name before*/
+.step_name::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  margin-right: 24px;
+  display: inline-block;
+  /* псевдо елементи є за замовчуванням рядковими, інлайн блок дає можливість примінити до нього значення width*/
+  background: currentColor;
+  position: relative;
+  top: -5px;
+}
+
+.step_title {
+  font-size: 64px;
+  line-height: 77px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 27px;
+}
+
+.step_description {
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.step_link > a {
+  color: #fbd784;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.step_link::after {
+  content: "→";
+  font-weight: 700;
+  color: #fbd784;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.step_img {
+  width: 566px;
+  flex-shrink: 0;
+}
+
+/* Якщо розміри картинки не підходять під бажані
+.step_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
