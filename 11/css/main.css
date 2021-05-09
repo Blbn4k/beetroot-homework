@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  background: #0b1d26;
+  min-height: 100vh;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: tomato;
+}
+
+.header {
+  position: fixed;
+  /*Розтягуємо блок по ширині*/
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 80px;
+  height: 150px;
+  /*розміщує елементи в блоці горизонтально (головна ось)*/
+  display: flex;
+  /*задаємо напямок головної осі*/
+  flex-direction: row;
+  /*розміщуємо контенкт вселедині контейнеру рівномірно по всій ширині. Три блоки розміщуються автоматично по заданій ширині з рівномірними відступами один між одним*/
+  /*justify-content: space-around; - вирівнює контент по ширині, але залишає перед першим елементом та після останнього відступи, котрі дорівнюють відступам між елементами*/
+  justify-content: space-between;
+  /*вирівнюємо наші елементи по центру вертикально, флекс розмістив їх зверху*/
+  align-items: center;
+
+  outline: 2px solid red;
+}
+
+.header_logo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.header_nav,
+.header_account {
+  font-weight: 700;
+}
+
+.nav_link {
+  margin: 0 20px;
+}
+.nav_link.back {
+  color: yellow;
+}
+
+.hero {
+  height: 2100px;
+  background: grey;
+  background-image: url(../img/Slice\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* якщо в background-image вказати декілька фото, або фото+ градієнт, потім можна їх спозиціонувати (background-position). Якщо ми вказуємо 4 елементи на бекграунд, їх позиції задаємо в тому порядку, в якому вказували самі елементи
+  background-image: 1,
+  2,
+  3,
+  4;
+  background-position: center(1), bottom(2), top(3), center(4); */
+  padding: 150px 0;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 88px;
+  line-height: 100px;
+  font-weight: 600;
+  width: 900px;
+  margin: 200px auto;
+}
+
+.container {
+  height: 1000px;
+}
