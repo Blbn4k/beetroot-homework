@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "HansKendrick-Regular";
+  src: url("../fonts/HansKendrick-Regular.eot"); /* IE9*/
+  src: url("../fonts/HansKendrick-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/HansKendrick-Regular.woff2") format("woff2"),
+    /* chrome、firefox */ url("../fonts/HansKendrick-Regular.woff")
+      format("woff"),
+    /* chrome、firefox */ url("../fonts/HansKendrick-Regular.ttf")
+      format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "HansKendrick-Regular", sans-serif;
+}
+
+body {
+  background-color: #e2e7ec;
+}
+
+.first_block {
+  min-height: 540px;
+  min-width: 740px;
+  background-image: url(../img/Layer\ 8.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+
+.first_block_date {
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.first_block_title {
+  margin-bottom: 40px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+span {
+  display: block;
+}
+
+.other_block {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 360px;
+  min-height: 540px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.other_block_wrapper {
+  min-height: 289px;
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.other_block_date {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.other_block_title {
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+
+.footer {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: grey;
+  margin-top: 80px;
+}
+
+.footer .fas {
+  font-size: 16px;
+}
