@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  color: white;
+  min-width: 400px;
+  max-width: 900px;
+  min-height: 550px;
+  background-image: url(https://expertphotography.com/wp-content/uploads/2018/03/abstract-photography.1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card_description {
+  padding: 30px;
+
+  font-size: 24px;
+  line-height: 150%;
+  background: linear-gradient(353deg, #00000091, transparent);
+}
+
+.card_date {
+  font-size: 32px;
+  background-color: rgba(158, 151, 151, 0.3);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 15px;
+  border-radius: 4px;
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b07cf7;
+  font-family: "Raleway", sans-serif;
+}
+
+.header_title {
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.header_text {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 17px;
+  max-width: 570px;
+  margin: 0 auto;
+  line-height: 26px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 50px auto;
+}
+
+.card {
+  color: white;
+  min-height: 310px;
+  max-width: 370px;
+  padding-top: 100px;
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.kivi {
+  background-image: url(../img/bg_hover.jpg);
+}
+
+.soup {
+  background-image: url(../img/bg_5.jpg);
+}
+
+.straw {
+  background-image: url(../img/bg_3.jpg);
+}
+
+.card_date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.295);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+span {
+  display: block;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.card_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+
+.card_description {
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.card_text {
+  background-image: linear-gradient(0deg, black, transparent);
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  padding: 20px 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #f72b3b;
+  border: none;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: indianred;
+}
+
+.card:hover {
+  cursor: pointer;
+}

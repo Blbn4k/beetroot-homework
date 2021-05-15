@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.header_title {
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header_line {
+  width: 45px;
+  margin: 0 auto;
+  color: grey;
+  font-weight: 700;
+}
+
+.header_text {
+  max-width: 570px;
+  margin: 40px auto;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.main {
+  display: flex;
+  max-width: 1170px;
+  justify-content: space-between;
+  margin: 60px auto 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card_photo {
+  min-width: 270px;
+  min-height: 270px;
+}
+
+.card_photo.man {
+  background-image: url(../img/man.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_photo.man:hover {
+  background-color: #18b5dc;
+  background-image: none;
+}
+
+.card_photo.firstgirl {
+  background-image: url(../img/girl2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_photo.firstgirl:hover {
+  background-color: #18b5dc;
+  background-image: none;
+}
+
+.card_photo.secondgirl {
+  background-image: url(../img/girl1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_photo.secondgirl:hover {
+  background-color: #18b5dc;
+  background-image: none;
+  transform: scale(2, 2);
+}
+
+.card_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 112.5px 60px;
+}
+
+a {
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 5px;
+  background-color: #6bbccf;
+  opacity: 0;
+}
+
+.card_photo:hover a {
+  opacity: 1;
+}
+
+a.twitter {
+  background-image: url(../img/twitter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a.facebook {
+  background-image: url(../img/fb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a.google {
+  background-image: url(../img/g.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-top: 20px;
+}
+
+span {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+}
