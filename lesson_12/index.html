@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <form action="#" method="GET" class="form">
+
+                <label class="input-block">
+                    <span class="input-block_name">Ім'я</span>
+
+                    <input 
+                    required 
+                    type="text" 
+                    name="name" 
+                    min="2"
+                    pattern="[А-ЯЁ] [а-яё] {1,}"
+                    id="" 
+                    class="input-block_input">
+                </label>
+
+            
+                <label class="input-block">
+                    <span class="input-block_name">Вік (не молодше 18 років)</span>
+
+                    <input 
+                    equired type="number" 
+                    name="age" 
+                    min="18"
+                    max="100"
+                    pattern="[0123456789]{1,3}"
+                    id="" 
+                    class="input-block_input"
+                    step="2"
+                    autocomplete="off">            
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block_name">Місто</span>
+
+                    <select required name="city" class="input-block_input">
+                        <option></option>
+                        <option>Київ</option>
+                        <option>Харків</option>
+                        <option>Львів</option>
+                        <option>Дніпро</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="btn btn--primary">Надіслати</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -55,11 +55,17 @@ header {
   min-height: 270px;
 }
 
+.card_photo-parent:hover .card_photo.man {
+  transform: scale(1.1);
+}
+
 .card_photo.man {
   background-image: url(../img/man.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  transition: transform 0.5s;
 }
 
 .card_photo.man:hover {
@@ -72,6 +78,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  transition: transform 0.5s;
 }
 
 .card_photo.firstgirl:hover {
@@ -79,17 +87,26 @@ header {
   background-image: none;
 }
 
+.card_photo-parent:hover .card_photo.firstgirl {
+  transform: skew(5deg, 5deg);
+}
+
 .card_photo.secondgirl {
   background-image: url(../img/girl1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  transition: transform 0.5s;
 }
 
 .card_photo.secondgirl:hover {
   background-color: #18b5dc;
   background-image: none;
-  transform: scale(2, 2);
+}
+
+.card_photo-parent:hover .card_photo.secondgirl {
+  transform: rotate(10deg);
 }
 
 .card_links {
