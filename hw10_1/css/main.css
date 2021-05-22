@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 150px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+.header__logo {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  margin-left: 165px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 560px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  margin-right: 165px;
+
+  max-width: 600px;
+}
+
+.nav__item {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  border-top: 2px solid transparent;
+}
+
+.nav__item:hover {
+  transition: all 0.3s;
+  border-top: 2px solid #ff6033;
+}
+
+.nav__item:active {
+  color: #ff6033;
+}
+
+.section__fresh {
+  padding: 360px 0 410px;
+  background-image: url(../img/img_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 165px;
+  margin-right: 165px;
+  font-family: "Raleway", sans-serif;
+}
+
+.section__title {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.section__text {
+  max-width: 360px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 175%;
+  margin-bottom: 20px;
+}
+
+.button__btn {
+  padding: 17px 23px;
+  background-color: #ff6033;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  -webkit-box-shadow: 5px 5px 17px -7px rgba(0, 0, 0, 0.88);
+  box-shadow: 5px 5px 17px -7px rgba(0, 0, 0, 0.88);
+}
+
+.button__btn:hover {
+  cursor: pointer;
+  background-color: #ff5f33c0;
+  transform: scale(1.05);
+
+  transition: transform 0.2s;
+}
+
+.button__btn:active {
+  background-color: #ff6033;
+  box-shadow: none;
+}
+
+.section__scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+}
+
+.section__about {
+  padding: 200px 0;
+  background-image: url(../img/img.png);
+  background-repeat: no-repeat;
+  background-position: 10% 70%;
+  background-color: #00b2b2;
+}
+
+.section__wrapper--about {
+  align-items: flex-end;
+}
+
+.section__title--white {
+  color: white;
+  font-weight: 700;
+  font-size: 90px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.section__text--white {
+  color: white;
+  max-width: 500px;
+  width: 100%;
+}

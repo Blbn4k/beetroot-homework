@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url(../img/Group\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #111a28;
+  max-width: 685px;
+  width: 100%;
+  min-height: 391px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.lefthalf {
+  display: flex;
+  flex-direction: column;
+}
+
+.lefthalf__logo {
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.lefthalf__photo {
+  margin-top: 70px;
+  margin-left: 36px;
+}
+
+.lefthalf__color {
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.lefthalf__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.lefthalf__dot:hover {
+  cursor: pointer;
+  border-color: grey;
+}
+
+.black {
+  background-color: #2c2b2b;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: #00a2ff;
+}
+
+.righthalf {
+  font-family: "MuseoModerno", cursive;
+  color: white;
+  opacity: 0.6;
+  margin-left: 80px;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.righthalf__name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.righthalf__description {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+
+.righthalf__rating {
+  max-height: 10px;
+  margin-bottom: 25px;
+}
+
+.material-icons {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.material-icons:hover {
+  color: #d4d418;
+  cursor: pointer;
+}
+
+.yellow {
+  color: #d4d418;
+}
+
+.righthalf__choose {
+  font-family: "MuseoModerno", cursive;
+  background-color: #111a28;
+  border: 1px solid white;
+  color: white;
+  opacity: 0.6;
+  padding: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.righthalf__choose:focus {
+  opacity: 1;
+}
+
+.btn {
+  font-family: "MuseoModerno", cursive;
+  background-color: #111a28;
+  border: 1px solid white;
+  color: white;
+  opacity: 0.6;
+  padding: 10px 50px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #182b49;
+}
+
+.btn:active {
+  background-color: #111a28;
+  opacity: 1;
+}
