@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Побудова форм</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="form">
+                <div class="form__tab">
+                    <a href="#signin" id="joinus" class="tab__link first__page">Sign In</a>
+                    <a href="#joinus" id="signin" class="tab__link second__page">Join Us</a>
+                </div>
+
+                <form class="form__container" method="GET" action="#">
+                    <label for="username" class="form__label">Username</label>
+                    <input 
+                        id="username" 
+                        type="text" 
+                        name="username" 
+                        class="form__input"
+                        required
+                        minlength="3"
+                        pattern="[A-Z]{1}[a-z]{1,}">
+
+                    <label for="password" class="form__label">Password</label>
+                    <input 
+                        id="password" 
+                        type="password" 
+                        name="password" 
+                        class="form__input"
+                        minlength="5"
+                        required>
+
+                    <div class="form__checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="checkbox"
+                            class="box__checker"
+                            required>
+                        <label for="checkbox">Keep me signed in</label>
+                    </div>
+
+                    <input 
+                        type="submit" 
+                        value="Sign in"
+                        class="form__submit">
+                </form>
+
+                <div class="form__help">
+                    <a href="#!" class="form__help-link">Forgot password</a>
+                    <a href="#!" class="form__help-link">Create an account</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

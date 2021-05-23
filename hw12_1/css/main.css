@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Raleway", sans-serif;
+}
+
+.title__title {
+  margin-top: 100px;
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.title__description {
+  max-width: 370px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 165px;
+  margin-right: 165px;
+  font-family: "Raleway", sans-serif;
+}
+
+.main__form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block {
+  background-color: #00c4c470;
+  color: white;
+  border: 3px solid transparent;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 20px 15px;
+}
+
+.input-block::placeholder {
+  color: white;
+  font-weight: 300;
+}
+
+.input-block:focus {
+  outline: none;
+  border-left: 3px solid #355b82;
+  transition: border-left 0.4s;
+  background-color: #00c4c4;
+}
+
+.message {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.btn {
+  background-color: #00c4c4;
+  margin-bottom: 120px;
+
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1.01);
+  box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.73);
+}
+
+.btn:active {
+  box-shadow: none;
+  border: none;
+}
+
+.main__tip {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.main__meaning {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #262626;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  opacity: 0.6;
+
+  padding: 40px 165px;
+}
+
+.footer__logo {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+}
+
+.footer__author--red {
+  color: red;
+  opacity: 1;
+  font-weight: 700;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Побудова форм</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <div class="title__title">
+                Contact
+            </div>
+            <div class="title__description">
+                For new projects. Ideas business or anything you'd like to discuss, contact with me!
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="main__form">
+            <form class="form" action="#" method="GET">
+
+                <input 
+                type="text"
+                class="input-block name"
+                name="name"
+                required
+                min="3"
+                maxlength="10"
+                pattern="[A-Z][a-z]{1,10}"
+                placeholder="Name, only 10 letters, first must be a capital letter..."
+                >
+                
+                <input 
+                type="email"
+                class="input-block email"
+                name="email"
+                required
+                placeholder="Your email..."
+                >
+
+                <input 
+                type="tel"
+                class="input-block tel"
+                name="tel"
+                required
+                placeholder="Your phone number, +380XXXXXXXXX..."
+                maxlength="13"
+                pattern="[+]{1}[3]{1}[8]{1}[0]{1}[0-9]{9}"
+                >
+
+                <textarea 
+                name="message"
+                class="input-block message"
+                required
+                minlength="200"
+                placeholder="Your message..."
+                ></textarea>
+
+                <input 
+                type="submit"
+                value="Submit"
+                class="input-block btn"
+                >
+            </form>
+
+
+        </div>
+
+        <div class="main__info">
+            <div class="main__tip">
+                Address
+            </div>
+
+            <div class="main__meaning">
+                123 City name, Street, City, Country
+            </div>
+
+            <div class="main__tip">
+                Email
+            </div>
+
+            <div class="main__meaning">
+                cahee@domain.com
+            </div>
+
+            <div class="main__tip">
+                Phone
+            </div>
+
+            <div class="main__meaning">
+                +012 345 6789
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__rights">
+            © 2020 Company. All right reserved.
+        </div>
+
+        <div class="footer__logo">
+            Cahee
+        </div>
+            
+        <div class="footer__author">
+            Made with <span class="footer__author--red">love</span> by YevHura
+        </div>
+
+    </footer>
+    
+</body>
+</html>
