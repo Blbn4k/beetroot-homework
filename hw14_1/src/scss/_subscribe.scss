@@ -1,0 +1,50 @@
+.section-subscribe {
+  background-image: url(../../img/14-6.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding: 140px 0 160px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    max-width: 570px;
+    font-size: 17px;
+    line-height: 160%;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__email {
+    max-width: 570px;
+    width: 100%;
+    font-size: 15px;
+    opacity: 0.6;
+    line-height: 100%;
+    padding: 20px 10px 20px;
+    margin-right: 30px;
+  }
+
+  &__email:focus {
+    opacity: 1;
+  }
+
+  &__button {
+    background-color: #96b92c;
+    cursor: pointer;
+  }
+}
