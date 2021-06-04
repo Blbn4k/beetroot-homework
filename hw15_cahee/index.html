@@ -14,19 +14,37 @@
             <div class="header__logo">
                 Cahee
             </div>
-            <nav class="header__nav">
-                <a href="#!" class="nav__item">Home</a>
-                <a href="#!" class="nav__item">About</a>
-                <a href="#!" class="nav__item">Services</a>
-                <a href="#!" class="nav__item">Gallery</a>
-                <a href="#!" class="nav__item">Blog</a>
-                <a href="#!" class="nav__item">Contact</a>
-            </nav>
+            <div class="header__menu">
+                <nav class="header__nav">
+                    <a href="#home" class="nav__item">Home</a>
+                    <a href="#about" class="nav__item">About</a>
+                    <a href="#services" class="nav__item">Services</a>
+                    <a href="#gallery" class="nav__item">Gallery</a>
+                    <a href="#blog" class="nav__item">Blog</a>
+                    <a href="#contact" class="nav__item">Contact</a>
+                </nav>
+
+                <div class="burger-menu">
+                    <input type="checkbox" id="burger-menu__burger">
+                    <label class="burger-menu__button" for="burger-menu__burger">
+                        <span></span>
+                    </label>
+
+                    <ul class="burger-menu__list">
+                        <li><a class="burger-menu__item" href="#home">Home</a></li>
+                        <li><a class="burger-menu__item" href="#about">About</a></li>
+                        <li><a class="burger-menu__item" href="#services">Services</a></li>
+                        <li><a class="burger-menu__item" href="#gallery">Gallery</a></li>
+                        <li><a class="burger-menu__item" href="#blog">Blog</a></li>
+                        <li><a class="burger-menu__item" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="section-fresh">
+        <section class="section-fresh" id="home">
             <div class="section-fresh__container container">
                 <div class="section-fresh__wrapper">
                     <div class="section-fresh__title">
@@ -45,7 +63,8 @@
             </div>
         </section>
 
-        <section class="section-about">
+
+        <section class="section-about" id="about">
             <div class="section-about__container container">
                 <div class="section-about__wrapper">
                     <div class="section-about__title title">
@@ -60,8 +79,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="section-services">
+        
+        <section class="section-services" id="services">
             <div class="section-services__container container">
                 <div class="section-services__list list">
                     <div class="list__section">
@@ -121,7 +140,7 @@
             </div>
         </section>
 
-        <section class="section-gallery">
+        <section class="section-gallery" id="gallery">
             <div class="section-gallery__container container">
 
                 <div class="section-gallery__heading">
@@ -142,7 +161,7 @@
                     <div class="section-gallery__item section-gallery__item--group">
 
                         <div class="section-gallery__group section-gallery__group--element">
-                            <img src="img/14-2.jpg" alt="blueberrн" class="section-gallery__img">
+                            <img src="img/14-2.jpg" alt="blueberry" class="section-gallery__img">
                         </div>
 
                         <div class="section-gallery__group section-gallery__group--element">
@@ -196,7 +215,7 @@
             </div>
         </section>
 
-        <section class="section-blog">
+        <section class="section-blog" id="blog">
             <div class="section-blog__container container">
 
                 <div class="section-blog__title title">
@@ -258,7 +277,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="section-contact__container container">
 
                 <div class="section-contact__title title">
